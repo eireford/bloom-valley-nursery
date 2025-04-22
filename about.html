@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom Valley About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Bloom Valley About Us">
+
+  <meta property="og:title" content="Bloom Valley About Us">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="bloomvalleynursery.com">
+  <meta property="og:image" content="img/Client1_LogoPallette2_014038.png">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <meta name="theme-color" content="#014038">
+  <script src="script.js"></script>
+</head>
+<body>
+<header>
+  <h1>Bloom Valley Nursery</h1>
+  <img src="img/Client1_LogoPalette2_014038.png" width="80" height="80" alt="Bloom Valley Nursery Logo"/>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+
+      <li>
+        <div class="marker">You are currently on </div>
+        <a href="aboutus.html">About</a>
+      </li>
+      <li><a href="gallery.html">Products</a></li>
+      <li><a href="plant-care.html">Plant Care</a></li>
+      <li><a href="#" id="view-cart">View Cart</a></li>
+      <li><a href="#" id="clear-cart">Clear Cart</a></li>
+      <li><a href="#" id="process-cart">Process Cart</a></li>
+    </ul>
+  </nav>
+</header>
+<hr>
+<main>
+  <div class="text-container">
+    <h2>About US</h2>
+    <p>Bloom Valley Nursery operates as a local, family-owned plant nursery in the area, specializing in the sale of a wide variety of plants,
+      trees, and gardening supplies. It aims to connect with gardening enthusiasts and homeowners in the community who share a passion for
+      horticulture. While the client does not have an existing website, it envisions a digital presence that reflects the natural beauty of
+      its plant nursery and resonates with gardening enthusiasts in the local community. As the client focuses on sustainability and creativity
+      in its operations, the primary goal of the website is to enhance visibility in the local market, foster community engagement, and
+      facilitate customer inquiries and orders. Its target audience comprises local gardening enthusiasts and homeowners seeking high-quality
+      plants and gardening supplies.</p>
+
+      <p>Hours of Operation:</p>
+    <ul>
+      <li>Monday–Friday: 9 a.m. to 6 p.m.</li>
+      <li>Saturday–Sunday: 10 a.m. to 5 p.m.</li>
+    </ul>
+  </div>
+  <h2>Contact Us</h2>
+  <form id="contact-form">
+    <label class="form-label" for="contact-name">Name:</label>
+    <input type="text" id="contact-name" class="email-input" name="name" required>
+
+    <label class="form-label" for="contact-email">Email:</label>
+    <input type="email" id="contact-email" name="contact-email" class="email-input" required>
+
+    <label class="form-label" for="contact-message">Message:</label>
+    <textarea class="text-area-input" id="contact-message" name="message" rows="6" required></textarea>
+
+    <button class="send-button" id="send-contact">Send</button>
+  </form>
+  <div id="contact-sent-modal" class="modal">
+    <div class="modal-content">
+      <h2>Glad to hear from you.</h2>
+      <p>You can expect a response within 3 business days.</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" id="close-contact-sent-modal">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path
+          d="M18.3 5.71a1 1 0 0 0-1.42 0L12 10.59 7.12 5.71a1 1 0 0 0-1.42 1.42L10.59 12l-4.89 4.88a1 1 0 0 0 1.42 1.42L12 13.41l4.88 4.89a1 1 0 0 0 1.42-1.42L13.41 12l4.89-4.88a1 1 0 0 0 0-1.42z"/>
+      </svg>
+    </div>
+  </div>
+</main>
+<footer>
+  <form class="subscribe" id="newsletter-form" action="">
+    <label class="form-label" for="email">Email:</label>
+    <input class="email-input" type="email" id="email" name="email" required>
+    <button class="subscribe-button" type="submit">Subscribe</button>
+  </form>  <div class="social-bar">
+    <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+    <a href="https://www.twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
+    <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+    <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin">LinkedIn</a>
+  </div>
+  <p>&copy; 2025 Bloom Valley Nursery</p>
+  <div id="subscribe-modal" class="modal">
+    <div class="modal-content">
+      <h2>Thank You for Subscribing!</h2>
+      <p>You will receive our latest updates and offers.</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" id="close-subscribe-modal">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path
+          d="M18.3 5.71a1 1 0 0 0-1.42 0L12 10.59 7.12 5.71a1 1 0 0 0-1.42 1.42L10.59 12l-4.89 4.88a1 1 0 0 0 1.42 1.42L12 13.41l4.88 4.89a1 1 0 0 0 1.42-1.42L13.41 12l4.89-4.88a1 1 0 0 0 0-1.42z"/>
+      </svg>
+    </div>
+  </div>
+  <div id="view-cart-modal" class="modal">
+    <div class="modal-content">
+      <h2>Your Cart</h2>
+      <p id="cart-items-list">No items in cart.</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" id="close-view-cart-modal">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path
+          d="M18.3 5.71a1 1 0 0 0-1.42 0L12 10.59 7.12 5.71a1 1 0 0 0-1.42 1.42L10.59 12l-4.89 4.88a1 1 0 0 0 1.42 1.42L12 13.41l4.88 4.89a1 1 0 0 0 1.42-1.42L13.41 12l4.89-4.88a1 1 0 0 0 0-1.42z"/>
+      </svg>
+    </div>
+  </div>
+  <div id="clear-cart-modal" class="modal">
+    <div class="modal-content">
+      <h2>Clear Cart Confirmation</h2>
+      <p>Are you sure you want to clear your cart?</p>
+      <button class="subscribe-button" id="confirm-clear-cart">Yes, Clear Cart</button>
+      <button class="subscribe-button" id="cancel-clear-cart">No, Keep Items</button>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" id="close-clear-cart-modal">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path
+          d="M18.3 5.71a1 1 0 0 0-1.42 0L12 10.59 7.12 5.71a1 1 0 0 0-1.42 1.42L10.59 12l-4.89 4.88a1 1 0 0 0 1.42 1.42L12 13.41l4.88 4.89a1 1 0 0 0 1.42-1.42L13.41 12l4.89-4.88a1 1 0 0 0 0-1.42z"/>
+      </svg>
+    </div>
+  </div>
+  <div id="cart-cleared-modal" class="modal">
+    <div class="modal-content">
+      <h2>Cart Cleared</h2>
+      <p>Your cart has been cleared.</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" id="close-cart-cleared-modal">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path
+          d="M18.3 5.71a1 1 0 0 0-1.42 0L12 10.59 7.12 5.71a1 1 0 0 0-1.42 1.42L10.59 12l-4.89 4.88a1 1 0 0 0 1.42 1.42L12 13.41l4.88 4.89a1 1 0 0 0 1.42-1.42L13.41 12l4.89-4.88a1 1 0 0 0 0-1.42z"/>
+      </svg>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
