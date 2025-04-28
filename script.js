@@ -144,15 +144,21 @@ function clearCart() {
 
 function processCartMessage(event) {
   const processCartModal = document.getElementById("process-cart-modal");
+  const processSucceededModal = document.getElementById("process-succeeded-modal")
+  if (sessionStorage.getItem("cartitems")) {
+    console.log(sessionStorage.getItem("cartitems"))
+    console.log(("Process order called on empty cart."))
+  }
   if (processCartModal) {
     processCartModal.style.display = "flex"; // Open the modal
     const confirmProcessButton = document.getElementById("confirm-process-cart");
     if (confirmProcessButton) {
       confirmProcessButton.addEventListener("click", function () {
-        // Here you would typically process the cart in your application logic
-        console.log("Cart processed.");
-        alert("Your order has been placed successfully.");
+        console.log("Cart processed");
         processCartModal.style.display = "none"; // Close the modal
+        sessionStorage.clear();
+        processSucceededModal.style.display = "flex" // Open the modal
+
       });
     } else {
       console.error("Confirm process button not found in the process cart modal.");
